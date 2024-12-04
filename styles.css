@@ -72,3 +72,118 @@
     padding: 10px;
     color: #333;
 }
+/* ------------------ HEADING STYLES ------------------ */
+h1 {
+    color: #5a8cbe; /* Your blue color for the heading */
+    font-size: 36px;
+    margin-top: 30px;
+    font-family: 'Georgia', serif; /* Elegant serif font for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* ------------------ FORM STYLES ------------------ */
+  form {
+    background-color: #f9f9f9; /* Light gray background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    width: 100%;
+    max-width: 600px; /* Limit form width */
+    box-sizing: border-box;
+    display: block;
+  }
+
+  /* ------------------ FORM QUESTION STYLES ------------------ */
+  form div {
+    margin-bottom: 15px; /* Spacing between form elements */
+  }
+  
+  form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #333;
+  }
+  
+  form input[type="email"],
+  form input[type="date"],
+  form input[type="number"],
+  form input[type="text"],
+  form input[type="checkbox"],
+  form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  form input[type="submit"] {
+    background-color: #5a8cbe; /* Blue submit button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    width: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #4a7ea7; /* Slightly darker blue on hover */
+  }
+  
+  /* ------------------ FORM CHECKBOX STYLES ------------------ */
+  form p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  form div input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  form div label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* ------------------ MEDIA QUERY FOR SMALLER SCREENS ------------------ */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px; /* Smaller heading on smaller screens */
+    }
+  
+    form {
+      width: 90%; /* More flexible form width on smaller screens */
+      padding: 20px;
+    }
+  
+    form label {
+      font-size: 16px;
+    }
+  
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="number"],
+    form input[type="text"],
+    form input[type="checkbox"],
+    form input[type="submit"] {
+      font-size: 14px; /* Smaller input fields on smaller screens */
+    }
+  
+    form input[type="submit"] {
+      width: 100%; /* Full width for the submit button on small screens */
+    }
+  } 
