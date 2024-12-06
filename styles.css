@@ -1,4 +1,3 @@
-
 /* Nav Bar */
 .navbar {
   background-color: #5a8cbe; 
@@ -312,13 +311,23 @@ p:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'baloo bhai 2';
+  font-family: 'baloo bhai 2', sans-serif;
 }
 
 body {
   line-height: 1.6;
   color: #333;
   background: #eefbf4; /* Light green background for the body */
+}
+
+.hero-section {
+  background-image: url('./costaricaimages/costaricabackground.jpg'); /* Image for the background photo */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 20px;
+  color: #fff; /* Adjust text color for readability */
+  text-align: center;
 }
 
 /* Must See Attractions Section */
@@ -537,3 +546,4 @@ body {
   color: #555;
   margin-bottom: 15px;
 }
+
