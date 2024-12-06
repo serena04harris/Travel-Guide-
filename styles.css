@@ -32,14 +32,6 @@
     transform: scale(1.1); /* makes text bigger when mouse hovers */
 }
 
-/* Stamp Image */
-.stamp {
-    height: 50px; 
-    width: auto; 
-    position: absolute; 
-    top: 10px; 
-    right: 20px; 
-}
 
 /* Trips */
 .trips-grid {
@@ -188,3 +180,130 @@ h1 {
       width: 100%; /* Full width for the submit button on small screens */
     }
   } 
+/* About Page */
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Our Mission */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004d66;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004d66;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fun Animation */
+p:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Featured Destinations */
+.featured-destinations {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.featured-destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004d66;
+}
+
+.destinations-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #004d66;
+}
+
+.destination-card p {
+    font-size: 1rem;
+    padding: 0 10px 20px;
+    color: #555;
+}
+
+
+
