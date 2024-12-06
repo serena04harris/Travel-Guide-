@@ -1,307 +1,375 @@
-
 /* Nav Bar */
 .navbar {
-    background-color: #5a8cbe; 
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(39, 84, 142, 0.296);
+  background-color: #5a8cbe; 
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(39, 84, 142, 0.296);
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* aligns the links */
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* aligns the links */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #ecf0f1; 
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s, transform 0.3s;
-    letter-spacing: 1px;
+  text-decoration: none;
+  color: #ecf0f1; 
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+  letter-spacing: 1px;
 }
 
 .navbar a:hover {
-    color: #11704c; 
-    transform: scale(1.1); /* makes text bigger when mouse hovers */
+  color: #11704c; 
+  transform: scale(1.1); /* makes text bigger when mouse hovers */
 }
 
 
 /* Trips */
 .trips-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /* Trip boxes */
 .trip-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .trip-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 .trip-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .trip-card h2 {
-    padding: 10px;
-    color: #333;
+  padding: 10px;
+  color: #333;
 }
 /* ------------------ HEADING STYLES ------------------ */
 h1 {
-    color: #5a8cbe; /* Your blue color for the heading */
-    font-size: 36px;
-    margin-top: 30px;
-    font-family: 'Georgia', serif; /* Elegant serif font for the heading */
-    margin-bottom: 20px;
-  }
-  
-  /* ------------------ FORM STYLES ------------------ */
-  form {
-    background-color: #f9f9f9; /* Light gray background for the form */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    width: 100%;
-    max-width: 600px; /* Limit form width */
-    box-sizing: border-box;
-    display: block;
-    font-family: 'Georgia', serif;
+  color: #5a8cbe; /* Your blue color for the heading */
+  font-size: 36px;
+  margin-top: 30px;
+  font-family: 'Georgia', serif; /* Elegant serif font for the heading */
+  margin-bottom: 20px;
+}
+
+/* ------------------ FORM STYLES ------------------ */
+form {
+  background-color: #f9f9f9; /* Light gray background for the form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  width: 100%;
+  max-width: 600px; /* Limit form width */
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Georgia', serif;
+}
+
+/* ------------------ FORM QUESTION STYLES ------------------ */
+form div {
+  margin-bottom: 15px; /* Spacing between form elements */
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #333;
+}
+
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form input[type="text"],
+form input[type="checkbox"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+form input[type="submit"] {
+  background-color: #5a8cbe; /* Blue submit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 5px;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #4a7ea7; /* Slightly darker blue on hover */
+}
+
+/* ------------------ FORM CHECKBOX STYLES ------------------ */
+form p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+form div input[type="checkbox"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+form div label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* ------------------ MEDIA QUERY FOR SMALLER SCREENS ------------------ */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px; /* Smaller heading on smaller screens */
   }
 
-  /* ------------------ FORM QUESTION STYLES ------------------ */
-  form div {
-    margin-bottom: 15px; /* Spacing between form elements */
+  form {
+    width: 90%; /* More flexible form width on smaller screens */
+    padding: 20px;
   }
-  
+
   form label {
-    font-size: 18px;
-    margin-bottom: 5px;
-    display: inline-block;
-    color: #333;
+    font-size: 16px;
   }
-  
+
   form input[type="email"],
   form input[type="date"],
   form input[type="number"],
   form input[type="text"],
   form input[type="checkbox"],
   form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Smaller input fields on smaller screens */
   }
-  
-  form input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
+
   form input[type="submit"] {
-    background-color: #5a8cbe; /* Blue submit button */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 12px;
-    border-radius: 5px;
-    width: auto;
-    transition: background-color 0.3s ease;
+    width: 100%; /* Full width for the submit button on small screens */
   }
-  
-  form input[type="submit"]:hover {
-    background-color: #4a7ea7; /* Slightly darker blue on hover */
-  }
-  
-  /* ------------------ FORM CHECKBOX STYLES ------------------ */
-  form p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  form div input[type="checkbox"] {
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
-  form div label {
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* ------------------ MEDIA QUERY FOR SMALLER SCREENS ------------------ */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 28px; /* Smaller heading on smaller screens */
-    }
-  
-    form {
-      width: 90%; /* More flexible form width on smaller screens */
-      padding: 20px;
-    }
-  
-    form label {
-      font-size: 16px;
-    }
-  
-    form input[type="email"],
-    form input[type="date"],
-    form input[type="number"],
-    form input[type="text"],
-    form input[type="checkbox"],
-    form input[type="submit"] {
-      font-size: 14px; /* Smaller input fields on smaller screens */
-    }
-  
-    form input[type="submit"] {
-      width: 100%; /* Full width for the submit button on small screens */
-    }
-  } 
+} 
 /* About Page */
 
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 /* Our Mission */
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #004d66;
-    margin-top: 30px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004d66;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #004d66;
-    margin-top: 30px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004d66;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 p {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Fun Animation */
 p:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
-    text-align: center;
-    color: white;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .hero-image {
-    width: 100%;
-    height: auto%;
+  width: 100%;
+  height: auto%;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    margin: 0;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Featured Destinations */
 .featured-destinations {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .featured-destinations h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #004d66;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #004d66;
 }
 
 .destinations-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .destination-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .destination-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .destination-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .destination-card h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #004d66;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #004d66;
 }
 
 .destination-card p {
+  font-size: 1rem;
+  padding: 0 10px 20px;
+  color: #555;
+}
+
+
+/* Must See Attractions Section */
+.attractions {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.attractions h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #007b5f;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attraction {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.attraction:hover {
+  transform: scale(1.05);
+}
+
+.attraction img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #007b5f;
+}
+
+.attraction p {
+  padding: 0 15px 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
     font-size: 1rem;
-    padding: 0 10px 20px;
+  }
+
+  .attractions h2 {
+    font-size: 2rem;
+  }
+}
     color: #555;
 }
 
