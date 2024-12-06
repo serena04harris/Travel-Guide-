@@ -91,6 +91,7 @@ h1 {
     max-width: 600px; /* Limit form width */
     box-sizing: border-box;
     display: block;
+    font-family: 'Georgia', serif;
   }
 
   /* ------------------ FORM QUESTION STYLES ------------------ */
