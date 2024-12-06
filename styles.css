@@ -321,7 +321,7 @@ body {
 }
 
 .hero-section {
-  background-image: url('./costaricaimages/costaricabackground.jpg'); /* Image for the background photo */
+  background-image: url('costaricabackground.jpg'); /* Image for the background photo */
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -546,4 +546,5 @@ body {
   color: #555;
   margin-bottom: 15px;
 }
+
 
