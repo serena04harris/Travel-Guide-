@@ -1,3 +1,4 @@
+
 /* Nav Bar */
 .navbar {
   background-color: #5a8cbe; 
@@ -233,7 +234,7 @@ p:hover {
 
 .hero-image {
   width: 100%;
-  height: auto%;
+  height: auto;
 }
 
 .hero-text {
@@ -370,8 +371,3 @@ p:hover {
     font-size: 2rem;
   }
 }
-    color: #555;
-}
-
-
-
