@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" type="text/css" rel="stylesheet" />
         <title>Find a Trip!</title>
     </head>
     <body>
+
         <!-- Nav Bar -->
         <nav class="navbar">
             <ul>
@@ -14,136 +18,122 @@
             <img src="/Users/serenaharris/Desktop/stamp.webp" alt="Travel Stamp" class="stamp">
         </nav>
 
-        <h1>Find a Trip!</h1>
+        <!-- Hero Section -->
+        <header class="hero">
+            <!-- add image here if want to-->
+            <div class="hero-text">
+                <h1>WONDERLUST</h1>
+                <h2>Discover Your Next Adventure!</h2>
+            </div>
+        </header>
 
-        <!-- Guide Section -->
-    <form id="form">
+        <!-- Form for Gathering User Input -->
+         <form id="destination-form">
 
-        <!-- Question 1 -->
+        <!-- Question 1: Email-->
         <div>
             <label for="email">Your email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" id="email" name="email" required>
         </div>
 
-         <!-- Question 2 -->
+         <!-- Question 2: Start Date -->
         <div>
             <label for="start-date">Start date:</label>
-            <input type="date" name="start-date" id="start-date">
+            <input type="date" id="start-date" name="start-date" required>
         </div>
 
-         <!-- Question 3 -->
+         <!-- Question 3: End Date -->
         <div>
             <label for="end-date">End date:</label>
-            <input type="date" name="end-date" id="end-date">
+            <input type="date" id="end-date" name="end-date" required>
         </div>
 
-         <!-- Question 4 -->
+         <!-- Question 4: People -->
         <div>
             <label for="people">How many people are traveling total?</label>
             <input type="people" name="people" id="people"> 
         </div>
 
-         <!-- Question 5 -->
+         <!-- Question 5: Kids -->
         <div>
             <label for="kids">Are you traveling with kids? How many?</label>
             <input type="kids" name="kids" id="kids"> 
         </div>
 
-         <!-- Question 6 -->
-        <P>What kind of vacation are you looking for?</P>
+         <!-- Question 6: Destination (City, Beach, Desert, Mountain) -->
         <div>
-            <input type="checkbox" name="vacation" id="vacation-city" value="City">
-            <label for="vacation-city">City</label>
-        </div>
-        <div>
-            <input type="checkbox" name="vacation" id="vacation-beach" value="Beach">
-            <label for="vacation-beach">Beach</label>
-        </div>
-        <div>
-            <input type="checkbox" name="vacation" id="vacation-desert" value="Desert">
-            <label for="vacation-desert">Desert</label>
-        </div>
-        <div>
-            <input type="checkbox" name="vacation" id="vacation-desert" value="Mountain">
-            <label for="vacation-mountain">Mountain</label>
+            <p>What kind of vacation are you looking for?</p>
+            <input type="checkbox" id="vacation-city" value="City">
+            <label for="destination-city">City</label><br>
+            <input type="checkbox" id="beach-city" value="Beach">
+            <label for="beach-city">Beach</label><br>
+            <input type="checkbox" id="desert-city" value="Desert">
+            <label for="desert-city">Desert</label><br>
+            <input type="checkbox" id="Mountain-city" value="Mountain">
+            <label for="mountain-city">Mountain</label><br>
         </div>
 
-         <!-- Question 7 -->
-        <p>What is your budget range?</p>
-        <div>
-            <input type="checkbox" name="budget" id="vacation-budget" value="Budget">
-            <label for="budget-1">$500-$1,000</label>
-        </div>
-        <div>
-            <input type="checkbox" name="budget" id="vacation-budget" value="Budget">
-            <label for="budget-2">$1,000-$5,000</label>
-        </div>
-        <div>
-            <input type="checkbox" name="budget" id="vacation-budget" value="Budget">
-            <label for="budget-3">$5,000-$10,000</label>
-        </div>
-        <div>
-            <label for="budget-other">Other?</label>
-            <input type="text" name="budget" id="budget-other">
-        </div>
 
-         <!-- Question 8 -->
-        <p>What is your preferred climate?</p>
+         <!-- Question 7: Budget Range-->
         <div>
-            <input type="checkbox" name="climate" id="climate-warm" value="Climate">
-            <label for="climate-warm">Sunny and Warm</label>
+            <p>What is your budget range?</p>
+            <input type="checkbox" id="budget-500-1000" value="500-1000">
+            <label for="budget-500-1000">$500-$1,000</label><br>
+
+            <input type="checkbox" id="budget-1000-5000" value="1000-5000">
+            <label for="budget-1000-5000">$1,000-$5,000</label><br>
+
+            <input type="checkbox" id="budget-5000-10000" value="5000-10000">
+            <label for="budget-5000-10000">$5,000-$10,000</label><br>
+
+            <input type="checkbox" id="budget-other" value="other">
+            <label for="budget-other">Other</label>
         </div>
+           
+
+
+         <!-- Question 8: Preferred CLimate -->
         <div>
-            <input type="checkbox" name="climate" id="climate-mild" value="Climate">
-            <label for="climate-mild">Breezy and Mild</label>
-        </div>
-        <div>
-            <input type="checkbox" name="climate" id="climate-cold" value="Climate">
+            <p>What is your preferred climate?</p>
+            <input type="checkbox" id="climate-sunny" value="Sunny and Warm">
+            <label for="climate-sunny">Sunny and Warm</label><br>
+            <input type="checkbox" id="climate-breezy" value="Breezy and Mild">
+            <label for="climate-breezy">Breezy and Mild</label><br>
+            <input type="checkbox" id="climate-cold" value="Cold and Chilly">
             <label for="climate-cold">Cold and Chilly</label>
         </div>
        
-         <!-- Question 9 -->
-        <p>What is your preferred activity level?</p>
+         <!-- Question 9: Preferred Activity Level -->
         <div>
-            <input type="checkbox" name="activity" id="vacation-activity" value="Activity">
-            <label for="activity-relaxing">Rexalxing</label>
-        </div>
-        <div>
-            <input type="checkbox" name="activity" id="vacation-activity" value="Activity">
-            <label for="activity-adventurous">Adventurous</label>
-        </div>
-        <div>
-            <input type="checkbox" name="activity" id="vacation-activity" value="Activity">
+            <p>What is your preferred activity level?</p>
+            <input type="checkbox" id="activity-relaxing" value="Relaxing">
+            <label for="activity-relaxing">Relaxing</label><br>
+            <input type="checkbox" id="activity-adventurous" value="Adventurous">
+            <label for="activity-adventurous">Adventurous</label><br>
+            <input type="checkbox" id="activity-mix" value="Mix of both">
             <label for="activity-mix">Mix of both</label>
         </div>
 
-        <!-- Question 10-->
-        <p>What is your preferred transportation method when at your destination?</p>
-        <div>
-            <input type="checkbox" name="transportation" id="transportatio-walk" value="Transportation">
-            <label for="transportation-walk">Walk</label>
-        </div>
-        <div>
-            <input type="checkbox" name="transportation" id="transportation-bike" value="Transportation">
-            <label for="transportation-bike">Bike</label>
-        </div>
-        <div>
-            <input type="checkbox" name="transportation" id="transportation-bus" value="Transportation">
-            <label for="transportation-bus">Bus</label>
-        </div><div>
-            <input type="checkbox" name="transportation" id="transportation-car" value="Transportation">
-            <label for="transportation-car">Rent a car</label>
-        </div>
-        <div>
-            <input type="checkbox" name="transportation" id="transportation-tour" value="Transportation">
-            <label for="transportation-tour">Guided educational tour by bus or boat</label>
+        <!-- Question 10: Preferred Transportation Method-->
+         <div>
+            <p>What is your preferred transportation method when at your destination?</p>
+            <input type="checkbox" id="transportation-walk" value="Walk">
+            <label for="transportation-walk">Walk</label><br>
+            <input type="checkbox" id="transportation-bike" value="Bike">
+            <label for="transportation-bike">Bike</label><br>
+            <input type="checkbox" id="transportation-bus" value="Bus">
+            <label for="transportation-bus">Bus</label><br>
+            <input type="checkbox" id="transportation-car" value="Rent a car">
+            <label for="transportation-car">Rent a car</label><br>
+            <input type="checkbox" id="transportation-tour" value="Guided educational tour">
+            <label for="transportation-tour">Guided educational tour (bus/boat)</label>
         </div>
 
         <!-- Space -->
         <p></p>
 
-        <!-- Button -->
-        <input id="submit-button" type="submit" value="Find your Vacation Destination!">
+        <!-- Submit Button -->
+        <button type="submit">Find your Vacation Destination!</button>
 
         <!-- Add this section to display the result of the vacation -->
         <div id="destination-result" style="display:none;">
