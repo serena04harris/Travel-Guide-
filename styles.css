@@ -292,35 +292,33 @@ body {
     padding: 10px;
     color: #333;
   }
-
-  /* ------------------ FORM PAGE ------------------ */
   
   /* ------------------ HERO SECTION STYLES ------------------ */
-.hero {
-  margin-top: 80px; /* Ensures the hero section is pushed down below the navbar */
-  background-image: url('./your-hero-image.jpg'); /* Add your hero image path here */
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* Adjust the height of the hero section */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero-text {
-  color: white;
-  font-family: 'Georgia', serif;
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  font-size: 1.5em;
-}
+  .hero {
+    margin-top: 80px; /* Ensures the hero section is pushed down below the navbar */
+    background-image: url('./your-hero-image.jpg'); /* Add your hero image path here */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height of the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-text {
+    color: white;
+    font-family: 'Georgia', serif;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5em;
+  }
 
   /* ------------------ HEADING STYLES ------------------ */
   h1 {
