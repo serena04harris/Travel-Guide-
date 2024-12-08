@@ -70,7 +70,7 @@ const displayDestinationResult = (destination) => {
     }); 
 
     // Update the destination text with the message 
-    destinationText.innterHTML = destinationmessage;
+    destinationText.innerHTML = destinationMessage;
 
     // Clear any privious images 
     destinationImages.innerHTML = '';
@@ -84,3 +84,6 @@ const displayDestinationResult = (destination) => {
         destinationImages.appendChild(img);
     }); 
 }; 
+
+// Add event listener to the form
+document.getElementById('destination-form').addEventListener('submit', handleSubmit);
