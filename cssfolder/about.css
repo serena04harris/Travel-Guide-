@@ -31,7 +31,7 @@
     transform: scale(1.1); /* makes text bigger when mouse hovers */
   }
 
-/* About Page */
+/* ------------------ ABOUT PAGE ------------------ */
   
  /* General Styling */
 body {
@@ -125,3 +125,5 @@ body {
 .hero-text p {
     font-size: 1.5rem;
 }
+
+/* ------------------  ------------------ */
