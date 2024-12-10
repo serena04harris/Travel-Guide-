@@ -1,0 +1,273 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', sans-serif;
+  }
+
+body {
+    line-height: 1.6;
+    color: #2e4053; /* Deep slate blue for text */
+    background: #f4f6f7; /* Light misty grey background */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #d6eaf8; /* Soft Irish sky blue */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    color: #3c8d62; /* Vibrant green */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-section .description {
+    background-color: rgba(26, 188, 156, 0.1); /* Green with 10% opacity */
+    color: #2e4053; /* Deep slate blue for text */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    max-width: 800px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Must See Attractions Section */
+.attractions {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #aed6f1, #d6eaf8); /* Irish blues */
+    border-top: 8px solid #3c8d62; /* Vibrant green */
+    border-bottom: 8px solid #3c8d62;
+}
+
+.attractions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #3c8d62;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.attraction {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.attraction:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #3c8d62;
+}
+
+.attraction img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.attraction:hover img {
+    transform: scale(1.1);
+}
+
+.attraction h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #3c8d62;
+}
+
+.attraction p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+    color: #2e4053;
+    font-style: italic;
+}
+
+/* Transportation Section */
+.transportation {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #d6eaf8, #aed6f1); /* Soft Irish tones */
+    text-align: center;
+    border-top: 8px solid #3c8d62; /* Vibrant green */
+}
+
+.transportation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #3c8d62;
+    text-shadow: 1px 1px 2px #34495e;
+}
+
+.transport-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.transport-item {
+    background: #ffffff; /* White */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.transport-item:hover {
+    transform: scale(1.05);
+    border: 2px solid #3c8d62;
+}
+
+.transport-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3c8d62;
+}
+
+.transport-item p {
+    font-size: 1rem;
+    color: #2e4053;
+}
+
+/* Climate Section */
+.climate {
+    background: #d6eaf8;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 8px solid #3c8d62;
+}
+
+.climate h2 {
+    font-size: 2.5rem;
+    color: #3c8d62;
+}
+
+.climate p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #2e4053;
+}
+
+/* Important Information Before You Go Section */
+.important-info {
+    padding: 50px 20px;
+    background: #d6eaf8; /* Soft Irish blue background */
+    text-align: center;
+    border-top: 8px solid #3c8d62; /* Vibrant green */
+    display: grid; /* Center content */
+    justify-items: center;
+    align-items: center;
+}
+
+.important-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #3c8d62; /* Vibrant green */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.important-info p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #2e4053; /* Deep slate blue */
+    line-height: 1.8;
+    text-align: center; /* Ensures centered text alignment */
+}
+
+/* Book Popular Activities Section */
+.activities {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #aed6f1, #d6eaf8); /* Soft Irish blues */
+}
+
+.activities h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #3c8d62; /* Vibrant green */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #2e4053; /* Subtle shadow for depth */
+}
+
+.activity-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #3c8d62 #d6eaf8;
+}
+
+.activity-card {
+    flex: 0 0 250px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .activity-card:hover img {
+    transform: scale(1.1);
+  }
+
+.activity-card .activity-title {
+    font-size: 1.2rem;
+    color: #3c8d62;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 15px 0 10px;
+  }
+  
+  .activity-card .activity-title:hover {
+    text-decoration: underline;
+    color: #3c8d62;
+  }
+  
+  .activity-card p {
+    font-size: 1rem;
+    color: #1a4d2e;
+    margin-bottom: 15px;
+  }
+  
+  
