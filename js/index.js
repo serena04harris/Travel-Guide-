@@ -1,16 +1,35 @@
 const getDestinationValue = () => {
     // get destination values from form
     const cityCheckbox = document.getElementById('destination-city');
-    const beachCheckbox = document.getElementById('beach-city');
-    const desertCheckbox = document.getElementById('desert-city');
-    const mountainCheckbox = document.getElementById('mountain-city');
+    const beachCheckbox = document.getElementById('destination-beach');
+    const desertCheckbox = document.getElementById('destination-desert');
+    const mountainCheckbox = document.getElementById('destination-mountain');
     
-    // add destination to array
+    // create an array to hold the selected destinations
     const destinationList = [];
-    if (cityCheckbox.checked) destinationList.push(cityCheckbox.value);
-    if (beachCheckbox.checked) destinationList.push(beachCheckbox.value);
-    if (desertCheckbox.checked) destinationList.push(desertCheckbox.value);
-    if (mountainCheckbox.checked) destinationList.push(mountainCheckbox.value);
+
+    // Add destinations based on the checkbox selection
+
+    if (cityCheckbox.checked) {
+        destinationList.push('New York City'); 
+        destinationList.push('Italy');
+        destinationList.push('Ireland');
+    }
+
+    if (beachCheckbox.checked) {
+        destinationList.push('Costa Rica');
+        destinationList.push('Hawaii');
+    }
+
+    if (desertCheckbox.checked) {
+        destinationList.push('African Safari');
+        destinationList.push('Arizona and Utah');
+    }
+
+    if (mountainCheckbox.checked) {
+        destinationList.push('Alps');
+        destinationList.push('Canada');
+    } 
 
     return destinationList; 
 }; 
@@ -74,8 +93,7 @@ const getTransportationValue = () => {
 };
 
 const handleSubmit = (event) => {
-    // prevent page from reloading
-    event.preventDefault(); 
+    event.preventDefault(); // prevent page from reloading
 
      // Collect form data
      const destinationValue = getDestinationValue(); // Array of selected destinations
@@ -86,16 +104,25 @@ const handleSubmit = (event) => {
  
      // Sample predefined trips
      const trips = [
-         { name: "Bali Beach Escape", type: "beach", activities: ["surfing"], budget: 1500, season: "summer" },
-         { name: "Rocky Mountain Adventure", type: "mountain", activities: ["hiking"], budget: 1200, season: "fall" },
-         { name: "New York City Getaway", type: "city", activities: ["shopping"], budget: 2000, season: "spring" },
+         { name: "New York City", type: "city", budgetrange: "500-1000", climate: "breezy and mild", activities: ["mix of both"], transportation: "walk" },
+         { name: "Italy", type: "city", budgetrange: "1000-5000", climate: "sunny and warm", activities: ["adventurous"], transportation: "tour" },
+         { name: "Ireland", type: "city", budgetrange: "5000-10000", climate: "cold and chilly", activities: ["relaxing"], transportation: "bike" },
+         { name: "Costa Rica", type: "beach", budgetrange: "1000-5000", climate: "sunny and warm", activities: ["mix of both"], transportation: "walk" },
+         { name: "Hawaii", type: "beach", budgetrange: "500-1000", climate: "sunny and warm", activities: ["relaxing"], transportation: "bike" },
+         { name: "African Safari", type: "desert", budgetrange: "5000-10000", climate: "sunny and warm", activities: ["adventurous"], transportation: "tour" },
+         { name: "Arizona and Utah", type: "desert", budgetrange: "1000-5000", climate: "sunny and warm", activities: ["mix of both"], transportation: "rent a car" },
+         { name: "Alps", type: "mountain", budgetrange: "1000-5000", climate: "cold and chilly", activities: ["adventurous"], transportation: "bus" },
+         { name: "Canada", type: "mountain", budgetrange: "500-1000", climate: "cold and chilly", activities: ["adventurous"], transportation: "rent a car" },
      ];
  
-     // Find a matching trip
-     const matchedTrip = trips.find(trip => 
-         destinationValue.includes(trip.type) &&
-         activityValue.some(activity => trip.activities.includes(activity)) &&
-         budgetValue.some(budget => parseInt(budget) >= trip.budget)
+     // Find a matching trip based on the selected criteria
+        const matchedTrip = trips.find(trip => 
+            destinationValue.includes(trip.name) && // Check if the trip name is in the selected destinations
+            activityValue.some(activity => trip.activities && trip.activities.includes(activity)) && // Match activity
+            budgetValue.some(budget => {
+                const [min, max] = budget.split('-').map(Number);
+                return trip.budgetrange >= min && trip.budgetrange <= max; // Match budget range
+            })
      );
  
      // Get the result div for displaying the recommendation
