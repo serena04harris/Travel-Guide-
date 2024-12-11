@@ -20,22 +20,23 @@ const  getBudgetValue = () => {
     const budget10005000 = document.getElementById('budget-1000-5000');
     const budget500010000 = document.getElementById('budget-5000-10000');
     const otherBudget = document.getElementById('budget-other');
+    const budgetList = []; // Declare array here
 
     if (budget5001000.checked) budgetList.push(budget5001000.value);
     if (budget10005000.checked) budgetList.push(budget10005000.value);
     if (budget500010000.checked) budgetList.push(budget500010000.value);
     if (otherBudget.checked) budgetList.push(otherBudget.value);
 
-    return budgetList
+    return budgetList; 
 };
 
 const getClimateValue = () => {
-    constSunnyCheckbox = document.getElementById('climate-sunny');
-    const breezyCheckbox = document.getElementById('limate-breezy');
+    const SunnyCheckbox = document.getElementById('climate-sunny');
+    const breezyCheckbox = document.getElementById('climate-breezy');
     const coldCheckbox = document.getElementById('climate-cold');
     const climateList = [];
 
-    if (SunnyCheckbox.checked) climateList.push(sunnyCheckedbox.value);
+    if (SunnyCheckbox.checked) climateList.push(SunnyCheckbox.value);
     if (breezyCheckbox.checked) climateList.push(breezyCheckbox.value);
     if (coldCheckbox.checked) climateList.push (coldCheckbox.value);
 
@@ -74,7 +75,43 @@ const getTransportationValue = () => {
 
 const handleSubmit = (event) => {
     // prevent page from reloading
-    event.preventDefault();
+    event.preventDefault(); 
+
+     // Collect form data
+     const destinationValue = getDestinationValue(); // Array of selected destinations
+     const budgetValue = getBudgetValue(); // Array of budget ranges
+     const climateValue = getClimateValue();
+     const activityValue = getActivityValue();
+     const transportationValue = getTransportationValue();
+ 
+     // Sample predefined trips
+     const trips = [
+         { name: "Bali Beach Escape", type: "beach", activities: ["surfing"], budget: 1500, season: "summer" },
+         { name: "Rocky Mountain Adventure", type: "mountain", activities: ["hiking"], budget: 1200, season: "fall" },
+         { name: "New York City Getaway", type: "city", activities: ["shopping"], budget: 2000, season: "spring" },
+     ];
+ 
+     // Find a matching trip
+     const matchedTrip = trips.find(trip => 
+         destinationValue.includes(trip.type) &&
+         activityValue.some(activity => trip.activities.includes(activity)) &&
+         budgetValue.some(budget => parseInt(budget) >= trip.budget)
+     );
+ 
+     // Get the result div for displaying the recommendation
+     const resultDiv = document.getElementById('destination-text');
+     
+     // If a matching trip is found, show the recommendation
+     if (matchedTrip) {
+         resultDiv.textContent = `We recommend: ${matchedTrip.name}`;
+     } else {
+         resultDiv.textContent = "Sorry, no trips match your preferences.";
+     }
+ 
+     // Show the result section
+     const resultSection = document.getElementById('destination-result');
+     resultSection.style.display = 'block';
+ };
 
     // get form values 
     const emailValue = document.getElementById('email').value;
@@ -83,8 +120,8 @@ const handleSubmit = (event) => {
     const destinationValue = getDestinationValue(); // Calls getDestinationValue function
     const budgetValue = getBudgetValue();           // Calls getBudgetValue function
     const climateValue = getClimateValue();         // Calls getClimateValue function
-    const acitivtyValue = getActivityValue();       // Calls getActivityValue function
-    const getTransportationValue = getTransportationValue(); // Calls getTransportationValue function
+    const activityValue = getActivityValue();       // Calls getActivityValue function
+    const transportationValue = getTransportationValue(); // Calls getTransportationValue function
 
     // Add form values to destination object
     const destination = {
@@ -100,7 +137,7 @@ const handleSubmit = (event) => {
 
     // Now, handle displaying the desination information
     displayDestinationResult(destination);
-}
+
 
 const displayDestinationResult = (destination) => {
     // Get the result container
@@ -122,13 +159,13 @@ const displayDestinationResult = (destination) => {
             imagePaths.push('images/city.jpg')
         } else if (dest === 'Beach') {
             destinationMessage += 'enter text here, you are looking for a beach adventure! ' ;
-            imagePaths.push('images/city.jpg')
+            imagePaths.push('images/beach.jpg')
         } else if (dest === 'Desert') {
             destinationMessage += 'enter text here, you are looking for a desert adventure! ' ;
-            imagePaths.push('images/city.jpg')
+            imagePaths.push('images/desert.jpg')
         } else if (dest === 'Mountain') {
             destinationMessage += 'enter text here, you are looking for a mountain adventure! ' ;
-            imagePaths.push('images/city.jpg')
+            imagePaths.push('images/mountain.jpg')
         } 
     }); 
 
@@ -169,4 +206,4 @@ const displayDestinationResult = (destination) => {
 }; 
 
 // Add event listener to the form
-document.getElementById('destination-form').addEventListener('submit', handleSubmit);
+document.getElementById('form').addEventListener('submit', handleSubmit);
