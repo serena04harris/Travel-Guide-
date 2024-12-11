@@ -12,7 +12,8 @@ Home Page: The main landing page.
 About Page: Information about the project.
 Trip Guide Page: Displays a form where users can input their travel preferences. After submission, the website suggests a trip that best fits the user's criteria.
 
-<img width="500" alt="Screenshot 2024-12-11 at 2 29 49 PM" src="https://github.com/user-attachments/assets/53ea84c5-914f-485b-8e63-28536a3022cd" />
+
+<img width="500" alt="Screenshot 2024-12-11 at 3 21 07 PM" src="https://github.com/user-attachments/assets/badd7889-bf88-4539-9cfe-df7ad04ea549" />
 
 
 📂 Files Overview
