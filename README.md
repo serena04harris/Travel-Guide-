@@ -29,9 +29,7 @@ about.js: Manages functionality specific to the About page.
 📌 Resources
 
 📝 To-Do List
-Track the project's progress using our Jira board:
-https://ncsgroupproject.atlassian.net/jira/core/projects/TRAV/board
+Track the project's progress using our Jira board: https://ncsgroupproject.atlassian.net/jira/core/projects/TRAV/board
 
 📖 Development Plan
-Refer to the detailed plan for this project:
-https://docs.google.com/presentation/d/1sknEQKw11H0dklDFOzou6hcmbr89EiwNnU3C42Ip9sY/edit#slide=id.g2d5a890ca48_0_11
+Refer to the detailed plan for this project: https://docs.google.com/presentation/d/1sknEQKw11H0dklDFOzou6hcmbr89EiwNnU3C42Ip9sY/edit#slide=id.g2d5a890ca48_0_11
