@@ -36,7 +36,7 @@ document.getElementById("travel-form").addEventListener("submit", function(event
      { 
       name: "Ireland", 
       type: "city", 
-      activities: "Game of Thrones", 
+      activities: "game of thrones", 
       budget: 2000, 
       season: "fall",
       url: "https://che-fern.github.io/Ireland/"
