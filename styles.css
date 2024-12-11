@@ -171,8 +171,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #f4f4f9, #d6f1fa);
 }
   
   /* Our Mission */
@@ -229,35 +228,117 @@ body {
   
 /* Hero Section */
 .about-hero {
-    position: relative;
-    text-align: center;
-    color: #004d66;
-    height: 400px;
-    overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: #004d66;
+  height: 400px;
+  overflow: hidden;
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(90%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(90%);
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.376);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.376);
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    margin: 0;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+
+/* Gallery Section */
+.gallery-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery-section h2 {
+  color: #004d66;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #004d66;
+  color: white;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-slider {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background: white;
+  color: #004d66;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Stylish Button */
+.next-button {
+  background-color: #1f9dc6; 
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.next-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  background-color: #00b3b37d; /* Changes to a different color on hover which I think is fun */
+}
+
+.next-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
   /* ------------------ GUIDE PAGE ------------------ */
