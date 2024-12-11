@@ -1,12 +1,14 @@
-// Add a little interactivity just for fun
-document.addEventListener("DOMContentLoaded", () => {
-    const heroText = document.querySelector('.hero-text h1');
+const testimonials = [
+    "Wonderlust made planning my vacation so easy and fun!",
+    "I had the best time of my life, all thanks to Wonderlust!",
+    "Their personalized approach is unbeatable. Highly recommend!",
+    "Thanks to Wonderlust, my dream trip became a reality!"
+];
 
-    heroText.addEventListener('mouseover', () => {
-        heroText.style.color = '#ffcc66';
-    });
+let index = 0;
 
-    heroText.addEventListener('mouseout', () => {
-        heroText.style.color = '#004d66';
-    });
-});
+function changeTestimonial() {
+    index = (index + 1) % testimonials.length;
+    document.getElementById("testimonial").textContent = testimonials[index];
+}
+
