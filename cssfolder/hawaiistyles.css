@@ -1,3 +1,37 @@
+/*HAWAII!*/
+/* ------------------ NAV BAR ------------------ */
+.navbar {
+    background-color: #004d66; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(39, 84, 142, 0.296);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* aligns the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ecf0f1; 
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+    letter-spacing: 1px;
+  }
+  
+  .navbar a:hover {
+    color: #11704c; 
+    transform: scale(1.1); /* makes text bigger when mouse hovers */
+  }
+
 /* General Styles */
 * {
     margin: 0;
