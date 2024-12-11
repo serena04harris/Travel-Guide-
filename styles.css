@@ -37,7 +37,7 @@
 /* General Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Baloo Bhai 2', sans-serif;
   line-height: 1.6;
 }
 
@@ -168,7 +168,7 @@ footer {
   
  /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Baloo Bhai 2', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #f4f4f9, #d6f1fa);
