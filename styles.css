@@ -453,4 +453,118 @@ body {
     font-size: 18px;
     font-weight: bold;
   }
-  
+
+ /* Specific Styles for "Find My Trip" Form */
+  #travel-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
+  }
+
+  #travel-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #004d66; /* Matches other headings */
+  }
+
+  #travel-form input,
+  #travel-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px;
+  }
+
+  #travel-form button {
+    background-color: #5a8cbe; /* Matches the "Find a Trip" Heading */
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  #travel-form button:hover {
+    background-color: #467aa1; /* Slightly darker for hover effect */
+  }
+
+  /* Result Section */
+  #result {
+    text-align: center;
+    margin-top: 20px;
+    color: #004d66;
+    font-size: 18px;
+  }
+
+  /* ------------------ Enhanced Travel Form Styling ------------------ */
+
+/* Travel-Themed Background for the Form Section */
+body {
+  background: url('images/collage.jpg') no-repeat center center fixed; /* Replace with your image path */
+  background-size: cover; /* Makes sure the background covers the entire viewport */
+}
+
+/* Overlay to enhance readability */
+#travel-form {
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for better definition */
+  border-left: 6px solid #5a8cbe; /* A vertical stripe for a modern touch */
+}
+
+/* Add subtle animation for the button */
+#travel-form button {
+  background-image: linear-gradient(90deg, #5a8cbe, #467aa1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-image 0.3s, transform 0.2s;
+}
+
+#travel-form button:hover {
+  background-image: linear-gradient(90deg, #467aa1, #5a8cbe);
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Result Section */
+#result {
+  font-style: italic; /* Adds a fun, adventurous feel */
+  font-size: 20px;
+}
+
+/* Centering and Styling the "Find a Trip" Heading */
+h1 {
+  text-align: center; /* Centers the heading horizontally */
+  color: #5a8cbe; /* Keeps the blue color */
+  font-size: 48px; /* Slightly larger for emphasis */
+  font-family: 'Georgia', serif; /* Matches the style */
+  margin: 30px auto 20px; /* Centers the heading with spacing */
+  width: fit-content; /* Makes the box fit snugly around the text */
+  padding: 20px; /* Adds space around the text */
+  background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray */
+  border-radius: 10px; /* Matches the form's rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Same shadow as the form */
+}
+
+/* Styling for the "Sorry, no trips match your preferences" Message */
+#result {
+  text-align: center; /* Centers the text */
+  color: #5a8cbe; /*Matches the blue color */
+  font-size: 24px; /* Slighly smaller than the main heading */
+  font-family: 'Georgia', serif; /* Consistent font */
+  margin: 20px auto; /* Centers the element with spacing */
+  width: fit-content; /* Fits snugly around the text */
+  padding: 15px 20px; /* Adds space around the text */
+  background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */ 
+} 
+
