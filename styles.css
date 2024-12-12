@@ -510,7 +510,7 @@ body {
 
 /* Travel-Themed Background for the Form Section */
 body {
-  background: url('images/collage.jpg') no-repeat center center fixed; /* Replace with your image path */
+  background: url('collageimages/collage.jpg') no-repeat center center fixed; /* Replace with your image path */
   background-size: cover; /* Makes sure the background covers the entire viewport */
 }
 
