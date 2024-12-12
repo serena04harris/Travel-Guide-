@@ -101,7 +101,7 @@ document.getElementById("travel-form").addEventListener("submit", function(event
      link.href = matchedTrip.url;
      link.target = "_blank"; // Opens in a new tab
      link.textContent = `We recommend: ${matchedTrip.name}`;
-     link.style.textDecoration = "none"; // Optional: Customize link style
+     link.style.textDecoration = "none"; 
      link.style.color = "blue";
  
      resultDiv.appendChild(link);
