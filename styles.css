@@ -211,9 +211,9 @@ body {
 .how-it-works .info-image {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%; /* Adjust the percentage as needed */
-    max-width: 300px; /* Optional: limit the maximum size */
-    height: auto; /* Maintain the aspect ratio */
+    width: 80%; 
+    max-width: 300px; 
+    height: auto; 
 }
 
 .how-it-works .text {
@@ -537,29 +537,29 @@ body {
 /* Centering and Styling the "Find a Trip" Heading */
 h1 {
   text-align: center; /* Centers the heading horizontally */
-  color: #5a8cbe; /* Keeps the blue color */
-  font-size: 48px; /* Slightly larger for emphasis */
+  color: #5a8cbe; 
+  font-size: 48px; /* Slightly larger for pazazz */
   font-family: 'Georgia', serif; /* Matches the style */
-  margin: 30px auto 20px; /* Centers the heading with spacing */
-  width: fit-content; /* Makes the box fit snugly around the text */
-  padding: 20px; /* Adds space around the text */
-  background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray */
-  border-radius: 10px; /* Matches the form's rounded corners */
+  margin: 30px auto 20px; 
+  width: fit-content; 
+  padding: 20px; 
+  background: rgba(249, 249, 249, 0.9); 
+  border-radius: 10px; /* Matches rounded corners */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Same shadow as the form */
 }
 
 /* Styling for the "Sorry, no trips match your preferences" Message */
 #result {
   text-align: center; /* Centers the text */
-  color: #5a8cbe; /*Matches the blue color */
-  font-size: 24px; /* Slighly smaller than the main heading */
-  font-family: 'Georgia', serif; /* Consistent font */
+  color: #5a8cbe; 
+  font-size: 24px; 
+  font-family: 'Georgia', serif; 
   margin: 20px auto; /* Centers the element with spacing */
-  width: fit-content; /* Fits snugly around the text */
-  padding: 15px 20px; /* Adds space around the text */
-  background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray background */
+  width: fit-content; /* Fits snug as a bug in a rug around the text */
+  padding: 15px 20px; 
+  background: rgba(249, 249, 249, 0.9); 
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */ 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 } 
 
 
