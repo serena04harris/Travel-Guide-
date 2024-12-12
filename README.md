@@ -8,7 +8,7 @@ Users can effortlessly discover tailored options for planned trips that align wi
 
 🗺️ Sitemap
 
-Our travel website features a user-friendly navigation bar, providing quick access to the following pages:
+Our travel website features a user-friendly navigation bar, providing quick access to the following pages on a variety of screen sizes:
 
 Home Page: The main landing page.
 About Page: Information about the project.
